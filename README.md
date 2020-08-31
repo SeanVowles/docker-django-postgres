@@ -62,16 +62,16 @@ For more information view [khezen/compose-postgres github](https://github.com/kh
 6. Create a connection to the postgres db
    1. ![Create a connection to the db](https://github.com/SeanVowles/docker-django-postgres/blob/master/images/create_server.png)
 7. Give the connection a reasonable name - for this example `docker_django_postgres_db`
-   1. ![DB connection name](../docker-django-postgresql/images/db_connection_name.png)
+   1. ![DB connection name](https://github.com/SeanVowles/docker-django-postgres/blob/master/images/db_connection_name.png)
 8. Enter the credentials. The really cool thing about this - for the `Host name\address` we can simply use the name of the docker service. In this example, it is simply `db`
    1. Host name\address : db
    2. port: 5432
    3. Maintenance database: postgres
    4. Username: postgres
    5. Password: postgres
-   6. ![DB connection details](../docker-django-postgresql/images/db_connection_details.png)
+   6. ![DB connection details](https://github.com/SeanVowles/docker-django-postgres/blob/master/images/db_connection_details.png)
 9. Check that the tables and super user are created by navigating the sidebar in `PgAdmin`
-   1.  ![DB data](../images/../docker-django-postgresql/images/db_data.png)
+   1.  ![DB data](https://github.com/SeanVowles/docker-django-postgres/blob/master/images/db_data.png)
 
 
 ### References
