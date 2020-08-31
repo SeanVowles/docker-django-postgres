@@ -49,8 +49,6 @@ In this section, set up the database connection for Django.
 This is already part of the `docker-compose.yml` file and will mostly be setup on the `docker-compose up` command. 
 For more information view [khezen/compose-postgres github](https://github.com/khezen/compose-postgres)
 
-**Note**: as of current I'm missing out a lot of what **khezen** has provided as I was having `volume` and `networking` issues.
-
 ## Creating django tables and viewing them in PgAdmin
 1. Run the `docker-compose up` command from the top level directory for your project
 2. Once the application has fully started, run migrations to create the tables `docker-compose exec web python manage.py migrate`
