@@ -60,7 +60,7 @@ For more information view [khezen/compose-postgres github](https://github.com/kh
    1. username: pgadmin4@pgadmin.org
    2. password: admin
 6. Create a connection to the postgres db
-   1. ![Create a connection to the db](../docker-django-postgresql/images/create_server.png)
+   1. ![Create a connection to the db](https://github.com/SeanVowles/docker-django-postgres/blob/master/images/create_server.png)
 7. Give the connection a reasonable name - for this example `docker_django_postgres_db`
    1. ![DB connection name](../docker-django-postgresql/images/db_connection_name.png)
 8. Enter the credentials. The really cool thing about this - for the `Host name\address` we can simply use the name of the docker service. In this example, it is simply `db`
