@@ -1,5 +1,5 @@
 version: '3'
-    
+
 services:
   db:
     image: postgres
@@ -7,14 +7,15 @@ services:
       POSTGRES_DB: ${POSTGRES_DB:-postgres}
       POSTGRES_USER: ${POSTGRES_USER:-postgres}
       POSTGRES_PASSWORD: ${POSTGRES_PASSWORD:-postgres}
-      PGDATA: /data/postgres      
+      PGDATA: /data/postgres
     volumes:
       - postgres:/data/postgres
+      - .:/code
     ports:
       - "5432:5432"
     networks:
       - postgres
-      
+
   pgadmin:
     container_name: docker_django_pgadmin_container
     image: dpage/pgadmin4
@@ -33,7 +34,7 @@ services:
   web:
     build: .
     command: python manage.py runserver 0.0.0.0:8000
-    # command: ["./wait-for-postgres.sh", "db", "python", "app.py"]
+    entrypoint: ["./wait-for-postgres.sh"]
     volumes:
       - .:/code
     ports:
